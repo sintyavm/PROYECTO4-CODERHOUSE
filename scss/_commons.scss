@@ -1,0 +1,65 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+
+}
+
+body{
+     background-color: rgb(20, 17, 17);
+     background-attachment:fixed;
+    
+  }
+h1{
+    @include H($textLg,$fontBolt,45px)
+           
+   }
+
+h2{
+  @include H($textMd,$fontBolt,45px)
+}
+//Error404//
+.e-404{
+display: flex;
+
+  
+ 
+}
+.img-404{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  
+  h1{
+    margin-right: 45px;
+    margin-top: 40px;
+  }
+  h2{
+    margin: 10px 45px;
+  }
+  
+  a{color:$mainColor;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+      &:hover{
+        color:$secondaryColor;
+
+      }
+   
+  }
+
+}
+.contactoD{
+  display: flex;
+  justify-content: space-between;
+    iframe{
+      margin-left: 45px;
+    }
+    form{
+      margin-right: 45px;
+    }
+    
+
+}

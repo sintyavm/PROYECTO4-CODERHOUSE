@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+  background-attachment: fixed;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 45px;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2.2em;
+  font-weight: 600;
+  margin: 45px;
+}
+
+.e-404 {
+  display: flex;
+}
+
+.img-404 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.img-404 h1 {
+  margin-right: 45px;
+  margin-top: 40px;
+}
+.img-404 h2 {
+  margin: 10px 45px;
+}
+.img-404 a {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.img-404 a:hover {
+  color: rgb(152, 148, 148);
+}
+
+.contactoD {
+  display: flex;
+  justify-content: space-between;
+}
+.contactoD iframe {
+  margin-left: 45px;
+}
+.contactoD form {
+  margin-right: 45px;
+}
+
+.botonera {
+  background-color: black;
+}
+.botonera img {
+  height: 100px;
+  margin-left: 35px;
+  margin-bottom: 6px;
+}
+.botonera ul {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  margin: 0px 10px;
+}
+.botonera ul li {
+  margin: 0 10px;
+}
+.botonera ul li a {
+  margin: 0px 15px;
+  color: rgb(255, 255, 255);
+}
+.botonera ul li a:hover {
+  color: rgb(152, 148, 148);
+}
+.botonera form input {
+  font-size: 0.7em;
+  padding: 5px;
+}
+.botonera form button {
+  width: 45px;
+  border: none;
+  background-color: black;
+  border-color: rgb(0, 0, 0);
+  color: rgb(254, 254, 254);
+}
+
+.carrito {
+  color: rgb(255, 255, 255);
+  width: 40px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+}
+
+.carrito2 {
+  color: rgb(255, 255, 255);
+  width: 45px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+}
+
+.burger {
+  width: 40px;
+}
+
+header img {
+  width: 100%;
+}
+
+.super {
+  font-size: 2em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+.super:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(152, 148, 148);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+footer ul {
+  display: flex;
+  margin: 0px 30px;
+  font-size: 1.1em;
+  list-style: none;
+  text-decoration: none;
+}
+footer ul li {
+  margin: 15px;
+}
+footer ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: rgb(152, 148, 148);
+}
+footer div a svg {
+  width: 38px;
+  height: 31px;
+}
+footer a {
+  text-decoration: none;
+}
+
+.alineado {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+
+.drop {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 4px 10px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-rows: 100px repeat(3, 1fr);
+  gap: 5px;
+  margin: 0px 30px;
+  margin-bottom: 30px;
+  grid-template-areas: "uno uno" "dos tres" "dos cuatro" "cinco cuatro";
+}
+
+.uno {
+  display: flex;
+  justify-content: end;
+  grid-area: uno;
+}
+
+.dos {
+  display: flex;
+  grid-area: dos;
+}
+
+.tres {
+  display: flex;
+  grid-area: tres;
+  align-items: end;
+}
+
+.tres img {
+  width: 50%;
+}
+
+.cuatro {
+  display: flex;
+  grid-area: cuatro;
+}
+
+.cinco {
+  display: flex;
+  grid-area: cinco;
+}
+
+.titulo {
+  font-size: 1.3em;
+  color: rgb(0, 0, 0);
+}
+
+.boton, .botonOf {
+  color: white;
+  background-color: rgb(25, 23, 23);
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.boton:hover, .botonOf:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(152, 148, 148);
+}
+
+.botonOf {
+  width: 80%;
+}
+
+.sizeProduc h2 {
+  font-size: 1.3em;
+}
+.sizeProduc a {
+  font-size: 0.8em;
+}
+
+@media (width < 992px) {
+  .alineado {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .none {
+    display: none;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr);
+    grid-template-areas: "uno uno " "dos tres" "cuatro cinco";
+  }
+  .uno {
+    justify-content: center;
+    align-items: center;
+  }
+  .tres {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tres img {
+    width: auto;
+  }
+  .tres a {
+    width: 100%;
+  }
+  .contactoD {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactoD iframe {
+    margin-right: 45px;
+    width: 90%;
+  }
+  .contactoD form {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 90%;
+  }
+}
+@media (width < 576px) {
+  h1, h2 {
+    text-align: center;
+  }
+  .super {
+    top: 50%;
+    left: 29%;
+  }
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5 auto;
+    gap: 10px;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+  }
+  .uno {
+    justify-content: center;
+    align-items: center;
+  }
+  .tres {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tres img {
+    width: auto;
+  }
+  .tres a {
+    width: 100%;
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  footer ul {
+    flex-direction: column;
+    margin: 0px -15px;
+  }
+  footer ul li {
+    margin-top: 2px;
+    margin-bottom: 1px;
+  }
+  .contactoD iframe {
+    margin-right: 45px;
+    width: 90%;
+  }
+  .contactoD form {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 90%;
+  }
+  .img-404 {
+    flex-direction: column-reverse;
+  }
+  .img-404 img {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
